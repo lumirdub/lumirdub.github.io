@@ -140,6 +140,13 @@ h2 { font: 800 clamp(30px, 4.6vw, 56px)/1.06 var(--display); letter-spacing: -.0
   place-items: center;
   color: var(--paper);
 }
+  .playbox::after {
+  content: "";
+  margin-left: 4px;
+  border-style: solid;
+  border-width: 11px 0 11px 18px;
+  border-color: transparent transparent transparent currentColor;
+}
 .video:nth-child(2) .playbox { color: var(--magenta); border-color: var(--magenta); }
 .screen .mascot { position: absolute; width: 46%; right: -6%; bottom: -26%; transform: rotate(-14deg); transition: transform .25s; --c: var(--paper); z-index: 1; }
 .video:nth-child(2) .screen .mascot { --c: var(--violet); }
@@ -156,7 +163,6 @@ h2 { font: 800 clamp(30px, 4.6vw, 56px)/1.06 var(--display); letter-spacing: -.0
 .why-list h3 { font: 800 24px/1.2 var(--display); margin-top: 10px; }
 .why-list p { margin-top: 10px; max-width: 42ch; opacity: .95; }
 
-/* ---------- collaboration ---------- */
 .offers { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; }
 .offer { padding: 34px 32px 36px; display: flex; flex-direction: column; align-items: flex-start; gap: 16px; border: var(--line) solid var(--paper); transition: background .15s; }
 .offer:hover { background: rgba(42, 10, 110, .35); }
