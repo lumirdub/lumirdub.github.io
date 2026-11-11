@@ -126,7 +126,7 @@ h2 { font: 800 clamp(30px, 4.6vw, 56px)/1.06 var(--display); letter-spacing: -.0
 .video:nth-child(2) .screen { background: linear-gradient(135deg, #fff, var(--pink-soft)); }
 .video:nth-child(3) .screen { background: linear-gradient(135deg, var(--magenta), var(--violet)); }
 .screen .ring { width: 54%; right: -12%; top: -34%; transform: rotateX(60deg) rotateZ(20deg); opacity: .9; }
-.screen > .playbox {
+.playbox {
   position: absolute !important;
   left: 50% !important;
   top: 50% !important;
@@ -140,7 +140,6 @@ h2 { font: 800 clamp(30px, 4.6vw, 56px)/1.06 var(--display); letter-spacing: -.0
   place-items: center;
   color: var(--paper);
 }
-.playbox::after { content: ""; margin-left: 4px; border-style: solid; border-width: 11px 0 11px 18px; border-color: transparent transparent transparent currentColor; }
 .video:nth-child(2) .playbox { color: var(--magenta); border-color: var(--magenta); }
 .screen .mascot { position: absolute; width: 46%; right: -6%; bottom: -26%; transform: rotate(-14deg); transition: transform .25s; --c: var(--paper); z-index: 1; }
 .video:nth-child(2) .screen .mascot { --c: var(--violet); }
@@ -405,8 +404,8 @@ footer img { width: min(100%, 420px); height: auto; display: block; }
       contact_h: 'Контакты', s_tg: 'Telegram-канал',
       mail_label: 'Почта', mail_note: 'Написать нам или договориться о сотрудничестве можно здесь.',
       copy: 'Скопировать адрес', copied: 'Скопировано', hint: 'Выделено, нажмите Ctrl+C',
-      subj1: 'Заказ озвучки', subj2: 'Хочу в команду'
-    }
+            subj1: 'Заказ озвучки', subj2: 'Хочу в команду'
+    },
     en: {
       nav_about: 'About', nav_works: 'Work', nav_why: 'Why us', nav_join: 'Collaboration', nav_contact: 'Contact',
       hero_h1: 'Welcome to Lumir dub',
